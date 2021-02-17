@@ -5,7 +5,8 @@ import reportWebVitals from './core/reportWebVitals';
 import { unregister } from './core';
 import { GlobalStyles, theme } from './styles'
 import { ThemeProvider } from 'styled-components';
-import { Content, Title } from './components';
+import { Card, Content, Grid, Title } from './components';
+
 
 
 ReactDOM.render(
@@ -13,6 +14,9 @@ ReactDOM.render(
     <GlobalStyles />
     <Content data-cy="content">
       <Title data-cy="title">Sudoku</Title>
+      <Card data-cy="card">
+        <Grid />
+      </Card>
     </Content>
   </ThemeProvider>,
   document.getElementById('root')

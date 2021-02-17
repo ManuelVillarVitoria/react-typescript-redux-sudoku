@@ -8,7 +8,7 @@ interface Iprops {
 
 const Block: FC<Iprops> = ({ colIndex, rowIndex }) => {
 
-    return <Container data-cy={`block-${rowIndex}-${colIndex}`}/>
+    return <Container data-cy={`block-${rowIndex}-${colIndex}`}>0</Container>
       
 }
    
